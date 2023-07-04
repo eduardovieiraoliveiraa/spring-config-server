@@ -1,12 +1,6 @@
 spring:
   application:
     name: api-curriculo
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - '*'
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/cambio_service?useTimezone=true&serverTimezone=UTC
@@ -19,3 +13,9 @@ management:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
